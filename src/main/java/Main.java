@@ -1,7 +1,7 @@
-//Napisz program, który sprawdza, czy dane słowo jest palindromem:
- //- Program powinien wczytać słowo wprowadzone przez użytkownika.
- //- Sprawdzić, czy słowo jest palindromem.
- //- Wyświetlić odpowiedni komunikat.
+//Napisz program, który oblicza wiek osoby na podstawie jej daty urodzenia:
+//- Program powinien wczytać datę urodzenia wprowadzone przez użytkownika.
+//- Obliczyć wiek na podstawie bieżącej daty.
+//- Wyświetlić wynik.
 
 
 import java.time.LocalDate;
