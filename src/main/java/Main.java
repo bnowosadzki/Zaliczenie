@@ -1,14 +1,22 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
+//Napisz program, który sprawdza, czy dane słowo jest palindromem:
+ //- Program powinien wczytać słowo wprowadzone przez użytkownika.
+ //- Sprawdzić, czy słowo jest palindromem.
+ //- Wyświetlić odpowiedni komunikat.
 
-// import org.junit.jupiter.api.Test;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+      Scanner scanner = new Scanner(System.in);
+    System.out.print("Podaj date urodzenia wformacie RRRR-MM-DD:");
+    String birthDateStr = scanner.next();
+    LocalDate birthDate = LocalDate.parse(birthDateStr);
+    LocalDate currentDate = LocalDate.now();
+    int age = Period.between(birthDate, currentDate).getYears();
+    System.out.println("Wiek: " + age + " lat");
+    }
+ }
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
-}
